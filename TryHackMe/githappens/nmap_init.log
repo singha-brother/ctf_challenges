@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Tue Mar  7 15:46:32 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.252.129
+Nmap scan report for 10.10.252.129
+Host is up, received syn-ack (0.25s latency).
+Scanned at 2023-03-07 15:46:33 +0630 for 58s
+Not shown: 999 closed ports
+Reason: 999 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack nginx 1.14.0 (Ubuntu)
+| http-git: 
+|   10.10.252.129:80/.git/
+|     Git repository found!
+|_    Repository description: Unnamed repository; edit this file 'description' to name the...
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.14.0 (Ubuntu)
+|_http-title: Super Awesome Site!
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  7 15:47:31 2023 -- 1 IP address (1 host up) scanned in 59.47 seconds

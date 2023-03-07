@@ -1,0 +1,42 @@
+# Nmap 7.80 scan initiated Sun Mar  5 02:17:48 2023 as: nmap -sC -sV -oN nmap_init -vv 10.10.39.251
+Nmap scan report for 10.10.39.251
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2023-03-05 02:17:49 +0630 for 64s
+Not shown: 987 closed ports
+Reason: 987 conn-refused
+PORT      STATE    SERVICE        REASON      VERSION
+22/tcp    open     ssh            syn-ack     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 a2:be:0a:e8:b1:41:f6:7a:7d:a5:bf:a8:52:b7:ee:73 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC68NnjgtEgnfeQsgSF4G5KCHrH1+Q94Cuk7W4Ig9UMplGhaUmv+APs3QpqnU4aRhQuJDiV7YknQ/hrsHwNmxdAk/kSAXYrM3cmqib09THsfRifntri7F6iLEtQ7fVlmTSgJvQOw67rDF3oMEu7/3QhZmcOtrb8J5ayZkcu7t6SBu4reTfQhdioC19any5Q99jo+BzZeqqWHV4rab0l1P17xNPfXxX0ZsMFPlFQe/+sGhJf+rC2W7mQzSmFQHvmPEVsDiL3oHW19FgVPqQ53zvHKEmit7jghRC/NP3FN5sFfps+rqQTQxxk9pSS4FC/vZ+xB5vY4c0LpVfW7c7nXV0x
+|   256 54:0e:19:ff:9f:26:0b:62:b1:ef:1a:e6:50:67:f4:a1 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGjK3hB1ZxxbaJE8PRUGstgm+7lsRX/5VvxZApPX2PYrKaZUylt+bSxiHYK8PyHQTw98c2slheQCewO5tb0n2bw=
+|   256 16:4a:8f:44:a0:23:a5:b8:aa:f4:f8:99:57:b1:df:e4 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBh4MuGaJxtXscWPLQ3xytTtbAhycLdVv9AYtgAwiJHg
+80/tcp    open     http           syn-ack     Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+109/tcp   filtered pop2           no-response
+683/tcp   filtered corba-iiop     no-response
+1234/tcp  open     http           syn-ack     Apache Tomcat/Coyote JSP engine 1.1
+|_http-favicon: Apache Tomcat
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache-Coyote/1.1
+|_http-title: Apache Tomcat/7.0.88
+1334/tcp  filtered writesrv       no-response
+3013/tcp  filtered gilatskysurfer no-response
+8009/tcp  open     ajp13          syn-ack     Apache Jserv (Protocol v1.3)
+|_ajp-methods: Failed to get a valid response for the OPTION request
+8042/tcp  filtered fs-agent       no-response
+9220/tcp  filtered unknown        no-response
+10001/tcp filtered scp-config     no-response
+33354/tcp filtered unknown        no-response
+38292/tcp filtered landesk-cba    no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar  5 02:18:53 2023 -- 1 IP address (1 host up) scanned in 64.55 seconds

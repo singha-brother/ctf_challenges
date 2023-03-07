@@ -1,0 +1,15 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.16.85
++ Target Hostname:    10.10.16.85
++ Target Port:        1234
++ Start Time:         2023-03-06 17:38:14 (GMT6.5)
+---------------------------------------------------------------------------
++ Server: Apache-Coyote/1.1
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.
++ Successfully authenticated to realm 'Tomcat Manager Application' with user-supplied credentials.
++ All CGI directories 'found', use '-C none' to test none
++ Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS 
++ OSVDB-397: HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ OSVDB-5646: HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.

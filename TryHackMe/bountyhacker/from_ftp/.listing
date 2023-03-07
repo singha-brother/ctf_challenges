@@ -1,0 +1,4 @@
+drwxr-xr-x    2 ftp      ftp          4096 Jun 07  2020 .
+drwxr-xr-x    2 ftp      ftp          4096 Jun 07  2020 ..
+-rw-rw-r--    1 ftp      ftp           418 Jun 07  2020 locks.txt
+-rw-rw-r--    1 ftp      ftp            68 Jun 07  2020 task.txt

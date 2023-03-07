@@ -1,0 +1,4 @@
+200      GET       30l      153w      969c http://10.10.18.223/
+200      GET       30l      153w      969c http://10.10.18.223/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://10.10.18.223/images (Apache)
+200      GET       30l      153w      969c http://10.10.18.223/index.html

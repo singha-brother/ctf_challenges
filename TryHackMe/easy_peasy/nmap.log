@@ -1,0 +1,19 @@
+# Nmap 7.80 scan initiated Tue Mar  7 13:42:00 2023 as: nmap -sC -sV -oN nmap.log -vv 10.10.93.166
+Increasing send delay for 10.10.93.166 from 0 to 5 due to 109 out of 363 dropped probes since last increase.
+Nmap scan report for 10.10.93.166
+Host is up, received syn-ack (0.26s latency).
+Scanned at 2023-03-07 13:42:01 +0630 for 39s
+Not shown: 999 closed ports
+Reason: 999 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack nginx 1.16.1
+| http-methods: 
+|_  Supported Methods: GET HEAD
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: nginx/1.16.1
+|_http-title: Welcome to nginx!
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  7 13:42:40 2023 -- 1 IP address (1 host up) scanned in 39.94 seconds

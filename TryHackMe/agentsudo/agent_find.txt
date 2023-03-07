@@ -1,0 +1,535 @@
+A
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+B
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+C
+======
+Attention chris, <br><br>
+
+Do you still remember our deal? Please tell agent J about the stuff ASAP. Also, change your god damn password, is weak! <br><br>
+
+From,<br>
+Agent R 
+
+
+D
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+E
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+F
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+G
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+H
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+I
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+J
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+K
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+L
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+M
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+N
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+O
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+P
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+Q
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+R
+======
+What are you doing! Are you one of the 25 employees? If not, I going to report this incident
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+S
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+T
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+U
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+V
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+W
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+X
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+Y
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
+Z
+======
+
+<!DocType html>
+<html>
+<head>
+	<title>Annoucement</title>
+</head>
+
+<body>
+<p>
+	Dear agents,
+	<br><br>
+	Use your own <b>codename</b> as user-agent to access the site.
+	<br><br>
+	From,<br>
+	Agent R
+</p>
+</body>
+</html>
+
