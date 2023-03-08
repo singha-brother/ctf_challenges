@@ -1,0 +1,32 @@
+# Nmap 7.80 scan initiated Tue Mar  7 23:35:15 2023 as: nmap -sC -sV -oN nmap.log -vv 10.10.154.149
+Increasing send delay for 10.10.154.149 from 0 to 5 due to 95 out of 316 dropped probes since last increase.
+Nmap scan report for 10.10.154.149
+Host is up, received syn-ack (0.25s latency).
+Scanned at 2023-03-07 23:35:16 +0630 for 41s
+Not shown: 996 closed ports
+Reason: 996 conn-refused
+PORT    STATE SERVICE REASON  VERSION
+22/tcp  open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 90:35:66:f4:c6:d2:95:12:1b:e8:cd:de:aa:4e:03:23 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCsEu5DAulaUX38ePQyI/MzevdyvWR3AXyrddVqbu9exD/jVVKZopquTfkbNwS5ZkADUvggwHnjZiLdOZO378azuUfSp5geR9WQMeKR9xJe8swjKINBtwttFgP2GrG+7IO+WWpxBSGa8akgmLDPZHs2XXd6MXY9swqfjN9+eoLX8FKYVGmf5BKfRcg4ZHW8rQZAZwiMDqQLYechzRPnePiGCav99v0X5B8ehNCCuRTQkm9DhkAcxVBlkXKq1XuFgUBF9y+mVoa0tgtiPYC3lTOBgKuwVZwFMSGoQStiw4n7Dupa6NmBrLUMKTX1oYwmN0wnYVH2oDvwB3Y4n826Iymh
+|   256 53:9d:23:67:34:cf:0a:d5:5a:9a:11:74:bd:fd:de:71 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPowlRdlwndVdJLnQjxm5YLEUTZZfjfZO7TCW1AaiEjkmNQPGf1o1+iKwQJOZ6rUUJglqG8h3UwddXw75eUx5WA=
+|   256 a2:8f:db:ae:9e:3d:c9:e6:a9:ca:03:b1:d7:1b:66:83 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHU5PslBhG8yY6H4dpum8qgwUn6wE3Yrojnu4I5q0eTd
+80/tcp  open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Fowsniff Corp - Delivering Solutions
+110/tcp open  pop3    syn-ack Dovecot pop3d
+|_pop3-capabilities: UIDL AUTH-RESP-CODE CAPA TOP SASL(PLAIN) USER RESP-CODES PIPELINING
+143/tcp open  imap    syn-ack Dovecot imapd
+|_imap-capabilities: IDLE AUTH=PLAINA0001 post-login have IMAP4rev1 LITERAL+ more SASL-IR listed capabilities OK Pre-login LOGIN-REFERRALS ID ENABLE
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  7 23:35:57 2023 -- 1 IP address (1 host up) scanned in 41.68 seconds

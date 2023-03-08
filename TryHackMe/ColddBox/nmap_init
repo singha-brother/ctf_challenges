@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Tue Mar  7 23:03:46 2023 as: nmap -sC -sV -oN nmap_init -vv 10.10.55.178
+Nmap scan report for 10.10.55.178
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2023-03-07 23:03:47 +0630 for 55s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT     STATE    SERVICE REASON      VERSION
+80/tcp   open     http    syn-ack     Apache httpd 2.4.18 ((Ubuntu))
+|_http-generator: WordPress 4.1.31
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: ColddBox | One more machine
+1137/tcp filtered trim    no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar  7 23:04:42 2023 -- 1 IP address (1 host up) scanned in 56.88 seconds

@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Wed Mar  8 13:18:05 2023 as: nmap -sC -sV -p 8765 -oN nmap_extra.log -vv 10.10.22.220
+Nmap scan report for 10.10.22.220
+Host is up, received syn-ack (0.25s latency).
+Scanned at 2023-03-08 13:18:06 +0630 for 19s
+
+PORT     STATE SERVICE REASON  VERSION
+8765/tcp open  http    syn-ack nginx 1.10.3 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: nginx/1.10.3 (Ubuntu)
+|_http-title: Mustacchio | Login
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar  8 13:18:25 2023 -- 1 IP address (1 host up) scanned in 20.15 seconds

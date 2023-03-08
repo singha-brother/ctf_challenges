@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Wed Mar  8 02:19:21 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.219.51
+Nmap scan report for 10.10.219.51
+Host is up, received syn-ack (0.25s latency).
+Scanned at 2023-03-08 02:19:22 +0630 for 61s
+Not shown: 999 closed ports
+Reason: 999 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+80/tcp open  http    syn-ack PHP cli server 5.5 or later (PHP 8.1.0-dev)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title:  Admin Dashboard
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar  8 02:20:23 2023 -- 1 IP address (1 host up) scanned in 62.69 seconds

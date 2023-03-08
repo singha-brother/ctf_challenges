@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Wed Mar  8 18:31:06 2023 as: nmap -sC -sV -oN nmap_init.log -vvv 10.10.50.100
+Nmap scan report for 10.10.50.100
+Host is up, received syn-ack (0.23s latency).
+Scanned at 2023-03-08 18:31:07 +0630 for 51s
+Not shown: 994 closed ports
+Reason: 994 conn-refused
+PORT     STATE    SERVICE       REASON      VERSION
+80/tcp   open     http          syn-ack     Werkzeug httpd 2.0.3 (Python 3.10.2)
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: Werkzeug/2.0.3 Python/3.10.2
+|_http-title: Corridor
+144/tcp  filtered news          no-response
+1152/tcp filtered winpoplanmess no-response
+1900/tcp filtered upnp          no-response
+5988/tcp filtered wbem-http     no-response
+9485/tcp filtered unknown       no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar  8 18:31:58 2023 -- 1 IP address (1 host up) scanned in 52.06 seconds
