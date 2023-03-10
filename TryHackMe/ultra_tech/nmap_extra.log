@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Thu Mar  9 02:13:02 2023 as: nmap -A -oN nmap_extra.log -p 31331 -vv 10.10.91.106
+Nmap scan report for 10.10.91.106
+Host is up, received conn-refused (0.27s latency).
+Scanned at 2023-03-09 02:13:03 +0630 for 20s
+
+PORT      STATE SERVICE REASON  VERSION
+31331/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 15C1B7515662078EF4B5C724E2927A96
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: UltraTech - The best of technology (AI, FinTech, Big Data)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar  9 02:13:23 2023 -- 1 IP address (1 host up) scanned in 21.67 seconds

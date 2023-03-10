@@ -1,0 +1,20 @@
+#!/bin/bash
+
+printf "Reading stats.\n"
+sleep 1
+printf "Reading stats..\n"
+sleep 1
+read -p "Enter name of person backing up the data: " name
+echo $name  >> /var/stats/stats.txt
+read -p "Enter 'date' to timestamp the file: " error
+printf "The Date is "
+$error 2>/dev/null
+
+date_save=$(date "+%F-%H-%M")
+cp /var/stats/stats.txt /var/stats/stats-$date_save.bak
+
+printf "Stats have been backed up\n"
+
+
+
+

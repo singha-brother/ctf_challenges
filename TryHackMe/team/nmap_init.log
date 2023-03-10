@@ -1,7 +1,7 @@
-# Nmap 7.80 scan initiated Wed Mar  8 22:33:21 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.9.148
-Nmap scan report for 10.10.9.148
-Host is up, received syn-ack (0.25s latency).
-Scanned at 2023-03-08 22:33:22 +0630 for 30s
+# Nmap 7.80 scan initiated Wed Mar  8 23:55:56 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.62.158
+Nmap scan report for 10.10.62.158
+Host is up, received syn-ack (0.27s latency).
+Scanned at 2023-03-08 23:55:57 +0630 for 33s
 Not shown: 997 filtered ports
 Reason: 997 no-responses
 PORT   STATE SERVICE REASON  VERSION
@@ -16,11 +16,11 @@ PORT   STATE SERVICE REASON  VERSION
 |_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHUxjoul7JvmqQMtGOuadBwi2mBVCdXhJjoG5x+l+uQn
 80/tcp open  http    syn-ack Apache httpd 2.4.29 ((Ubuntu))
 | http-methods: 
-|_  Supported Methods: OPTIONS HEAD GET POST
+|_  Supported Methods: GET POST OPTIONS HEAD
 |_http-server-header: Apache/2.4.29 (Ubuntu)
 |_http-title: Apache2 Ubuntu Default Page: It works! If you see this add 'te...
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Mar  8 22:33:52 2023 -- 1 IP address (1 host up) scanned in 31.82 seconds
+# Nmap done at Wed Mar  8 23:56:30 2023 -- 1 IP address (1 host up) scanned in 34.25 seconds
