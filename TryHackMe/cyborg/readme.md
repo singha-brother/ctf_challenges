@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-### Nmap Initial
+### Nmap
 
 1. 22/tcp open ssh syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
 2. 80/tcp open http syn-ack Apache httpd 2.4.18 ((Ubuntu))

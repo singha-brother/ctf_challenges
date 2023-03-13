@@ -31,7 +31,7 @@ index.html [Status: 200, Size: 10918, Words: 3499, Lines: 376]
 ```
 
 - I used turbo intruder in Burp and found
-  `user:xavier`
+  `admin:xavier`
 
 - Enter with that credentials
 - got id_rsa key
@@ -64,6 +64,8 @@ User john may run the following commands on bruteit:
 ## Root Access
 
 - crack root password with hashcat
+- `sudo cat /etc/shadow`
+- grep first line which is root's password as root_cipher file
 
 ```sh
 $ hashcat -m 1800 root_cipher /usr/share/wordlists/rockyou.txt

