@@ -40,6 +40,9 @@
 * [Academy](LocalVM/academy/README.md)
 * [Dev](LocalVM/dev/README.md)
 * [Gallery](TryHackMe/gallery/README.md)
+* [All In One](TryHackMe/all_in_one/README.md)
+* [Madness](TryhackMe/madness/README.md)
+* [Jack Of All Trades](TryHackMe/jack_of_all_trades/README.md)
 
 ## Medium
 

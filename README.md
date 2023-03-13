@@ -40,8 +40,10 @@
 | 36  | Blue               | [here](LocalVM/blue/)                    | TCM    | window(ms17-010)                          | easy       | March 12, 2023 |
 | 37  | Academy            | [here](LocalVM/academy/)                 | TCM    | linux(cron),web(upload)                   | easy       | March 12, 2023 |
 | 38  | Dev                | [here](LocalVM/dev/)                     | TCM    | linux(sudo), web(lfi), nfs                | easy       | March 12, 2023 |
-| 39  | Gallery            | [here](TryHackMe/gallery/readme.md)      | THM    | linux(suid,misconfig), web(sqli,upload)   | easy       | March 13, 2023 |
-
+| 39  | Gallery            | [here](TryHackMe/gallery/)               | THM    | linux(suid,misconfig), web(sqli,upload)   | easy       | March 13, 2023 |
+| 40  | All In One         | [here](TryHackMe/all_in_one/)            | THM    | linux(cron), web(wp,lfi,info dis)         | easy       | March 13, 2023 |
+| 41  | Madness            | [here](TryHackMe/madness/)               | THM    | linux(suid), web, stegano                 | easy       | March 13, 2023 |
+| 42  | Jack Of All Trades | [here](TryHackMe/jack_of_all_trades/)    | THM    | linux, web, stegano                       | easy       | March 14, 2023 |
 
 - [Here is Git Book Link](https://singha-notes.gitbook.io/ctf-challenges/)
 - [Here is GitHub Link](https://github.com/whoami-singha/ctf_challenges)
