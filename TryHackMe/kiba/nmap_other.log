@@ -1,0 +1,74 @@
+# Nmap 7.80 scan initiated Sat Mar 11 00:05:07 2023 as: nmap -sC -sV -p 5601 -oN nmap_other.log -vv 10.10.140.186
+Nmap scan report for 10.10.140.186
+Host is up, received syn-ack (0.23s latency).
+Scanned at 2023-03-11 00:05:08 +0630 for 30s
+
+PORT     STATE SERVICE   REASON  VERSION
+5601/tcp open  esmagent? syn-ack
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     kbn-name: kibana
+|     kbn-xpack-sig: c4d007a8c4d04923283ef48ab54e3e6c
+|     content-type: application/json; charset=utf-8
+|     cache-control: no-cache
+|     content-length: 60
+|     connection: close
+|     Date: Fri, 10 Mar 2023 17:35:29 GMT
+|     {"statusCode":404,"error":"Not Found","message":"Not Found"}
+|   GetRequest: 
+|     HTTP/1.1 302 Found
+|     location: /app/kibana
+|     kbn-name: kibana
+|     kbn-xpack-sig: c4d007a8c4d04923283ef48ab54e3e6c
+|     cache-control: no-cache
+|     content-length: 0
+|     connection: close
+|     Date: Fri, 10 Mar 2023 17:35:21 GMT
+|   HTTPOptions: 
+|     HTTP/1.1 404 Not Found
+|     kbn-name: kibana
+|     kbn-xpack-sig: c4d007a8c4d04923283ef48ab54e3e6c
+|     content-type: application/json; charset=utf-8
+|     cache-control: no-cache
+|     content-length: 38
+|     connection: close
+|     Date: Fri, 10 Mar 2023 17:35:22 GMT
+|_    {"statusCode":404,"error":"Not Found"}
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port5601-TCP:V=7.80%I=7%D=3/11%Time=640B6A59%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,D4,"HTTP/1\.1\x20302\x20Found\r\nlocation:\x20/app/kibana\r\nk
+SF:bn-name:\x20kibana\r\nkbn-xpack-sig:\x20c4d007a8c4d04923283ef48ab54e3e6
+SF:c\r\ncache-control:\x20no-cache\r\ncontent-length:\x200\r\nconnection:\
+SF:x20close\r\nDate:\x20Fri,\x2010\x20Mar\x202023\x2017:35:21\x20GMT\r\n\r
+SF:\n")%r(HTTPOptions,117,"HTTP/1\.1\x20404\x20Not\x20Found\r\nkbn-name:\x
+SF:20kibana\r\nkbn-xpack-sig:\x20c4d007a8c4d04923283ef48ab54e3e6c\r\nconte
+SF:nt-type:\x20application/json;\x20charset=utf-8\r\ncache-control:\x20no-
+SF:cache\r\ncontent-length:\x2038\r\nconnection:\x20close\r\nDate:\x20Fri,
+SF:\x2010\x20Mar\x202023\x2017:35:22\x20GMT\r\n\r\n{\"statusCode\":404,\"e
+SF:rror\":\"Not\x20Found\"}")%r(RTSPRequest,1C,"HTTP/1\.1\x20400\x20Bad\x2
+SF:0Request\r\n\r\n")%r(RPCCheck,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:n\r\n")%r(DNSVersionBindReqTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(DNSStatusRequestTCP,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r
+SF:\n\r\n")%r(Help,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SSLS
+SF:essionReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TerminalSe
+SF:rverCookie,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(TLSSessio
+SF:nReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(Kerberos,1C,"HT
+SF:TP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SMBProgNeg,1C,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\n\r\n")%r(X11Probe,1C,"HTTP/1\.1\x20400\x20Ba
+SF:d\x20Request\r\n\r\n")%r(FourOhFourRequest,12D,"HTTP/1\.1\x20404\x20Not
+SF:\x20Found\r\nkbn-name:\x20kibana\r\nkbn-xpack-sig:\x20c4d007a8c4d049232
+SF:83ef48ab54e3e6c\r\ncontent-type:\x20application/json;\x20charset=utf-8\
+SF:r\ncache-control:\x20no-cache\r\ncontent-length:\x2060\r\nconnection:\x
+SF:20close\r\nDate:\x20Fri,\x2010\x20Mar\x202023\x2017:35:29\x20GMT\r\n\r\
+SF:n{\"statusCode\":404,\"error\":\"Not\x20Found\",\"message\":\"Not\x20Fo
+SF:und\"}")%r(LPDString,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r
+SF:(LDAPSearchReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(LDAPB
+SF:indReq,1C,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n")%r(SIPOptions,1C
+SF:,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n\r\n");
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 11 00:05:38 2023 -- 1 IP address (1 host up) scanned in 31.03 seconds

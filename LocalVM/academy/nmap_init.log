@@ -1,0 +1,40 @@
+# Nmap 7.93 scan initiated Sun Mar 12 09:14:09 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.0.2.15
+Nmap scan report for 10.0.2.15
+Host is up, received syn-ack (0.0020s latency).
+Scanned at 2023-03-12 09:14:23 EDT for 17s
+Not shown: 997 closed tcp ports (conn-refused)
+PORT   STATE SERVICE REASON  VERSION
+21/tcp open  ftp     syn-ack vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.0.2.4
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 1000     1000          776 May 30  2021 note.txt
+22/tcp open  ssh     syn-ack OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 c744588690fde4de5b0dbf078d055dd7 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIBuDzM6D8xmqki4fcCb1uEhi1lmznDpxYuviaBAbbHjCbMgiNZHBQj2gPjZcFhcgHkr5TtWv0slV3IyhbOZLvhaZUZu3HS/sm/Tz3heAx3C50MX1DcPNw3EpTDrzAwM5EsgnEEjAXPMXXG8JQ3X5k5xEbe2BoCBc1ZAxuLAXc2l3RyL/vrXCO2HappsmoZuX8OPchvtHSqBDjyQB/BDeb5VszUXTnb+utkE9bbZrFbYsa3Ed5JgOWMaxieKArHlECTpqlkdp5vSJ58iefVHwkq5qE2fap3G1HmcoI9RMNIT1AohXRQ8Hk5jQDr2xY8q6PjKGsxnw5YVmV7dx8j6aX
+|   256 78ec470f0f53aaa6054884809476a623 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDch5BCc2rqpCaaWap74M3GZ5y9APegx7XQyPXXIvxBgowvdssDnp119M5t59+djVOEoWiqKnaT0GQRpJWBs2Ig=
+|   256 999c3911dd3553a0291120c7f8bf71a4 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFHqfgMhJpRl/QNeg560fqH+J5jrVf0b/kUL9g94XZnp
+80/tcp open  http    syn-ack Apache httpd 2.4.38 ((Debian))
+|_http-title: Apache2 Debian Default Page: It works
+|_http-server-header: Apache/2.4.38 (Debian)
+| http-methods: 
+|_  Supported Methods: OPTIONS HEAD GET POST
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 12 09:14:40 2023 -- 1 IP address (1 host up) scanned in 31.32 seconds

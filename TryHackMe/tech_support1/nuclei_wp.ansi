@@ -1,0 +1,11 @@
+[[92mwordpress-akismet[0m:[1;92moutdated_version[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/wp-content/plugins/akismet/readme.txt [[96m4.1.9[0m] [[93mlast_version[0m=[93m"5.0.2"[0m]
+[[92mwordpress-login[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/wp-login.php
+[[92mwordpress-directory-listing[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/wp-content/uploads/
+[[92mwordpress-directory-listing[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/wp-includes/
+[[92mwordpress-detect[0m:[1;92mversion_by_css[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/wp-admin/install.php [[96m5.7.2[0m]
+[[92mwordpress-xmlrpc-file[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/xmlrpc.php
+[[92mwordpress-redirection[0m:[1;92mdetected_version[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/wp-content/plugins/redirection/readme.txt [[96mtrunk[0m] [[93mlast_version[0m=[93m"5.3.9"[0m]
+[[92mwp-license-file[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/license.txt
+[[92mwordpress-xmlrpc-listmethods[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/xmlrpc.php
+[[92mwordpress-readme-file[0m] [[94mhttp[0m] [[34minfo[0m] http://10.10.195.101/wordpress/readme.html
+[[92mCVE-2017-5487[0m:[1;92musernames[0m] [[94mhttp[0m] [[33mmedium[0m] http://10.10.195.101/wordpress/?rest_route=/wp/v2/users/ [[96msupport[0m]

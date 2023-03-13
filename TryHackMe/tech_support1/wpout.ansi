@@ -1,0 +1,108 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.22
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: http://10.10.195.101/wordpress/ [10.10.195.101]
+[+] Started: Sat Mar 11 02:19:18 2023
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entry: Server: Apache/2.4.18 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://10.10.195.101/wordpress/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] WordPress readme found: http://10.10.195.101/wordpress/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] Upload directory has listing enabled: http://10.10.195.101/wordpress/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] The external WP-Cron seems to be enabled: http://10.10.195.101/wordpress/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 5.7.2 identified (Insecure, released on 2021-05-12).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://10.10.195.101/wordpress/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.2'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://10.10.195.101/wordpress/, Match: 'WordPress 5.7.2'
+
+[+] WordPress theme in use: teczilla
+ | Location: http://10.10.195.101/wordpress/wp-content/themes/teczilla/
+ | Last Updated: 2022-08-09T00:00:00.000Z
+ | Readme: http://10.10.195.101/wordpress/wp-content/themes/teczilla/readme.txt
+ | [!] The version is out of date, the latest version is 1.1.4
+ | Style URL: http://10.10.195.101/wordpress/wp-content/themes/teczilla/style.css?ver=5.7.2
+ | Style Name: Teczilla
+ | Style URI: https://www.avadantathemes.com/product/teczilla-free/
+ | Description: Teczilla is a creative, fully customizable and multipurpose theme that you can use to create any kin...
+ | Author: avadantathemes
+ | Author URI: https://www.avadantathemes.com/
+ |
+ | Found By: Css Style In Homepage (Passive Detection)
+ |
+ | Version: 1.0.4 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.10.195.101/wordpress/wp-content/themes/teczilla/style.css?ver=5.7.2, Match: 'Version: 1.0.4'
+
+[+] Enumerating Vulnerable Plugins (via Passive Methods)
+
+[i] No plugins Found.
+
+[+] Enumerating Vulnerable Themes (via Passive and Aggressive Methods)
+ Checking Known Locations - Time: 00:00:28 <======================> (494 / 494) 100.00% Time: 00:00:28
+[+] Checking Theme Versions (via Passive and Aggressive Methods)
+
+[i] No themes Found.
+
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+ Checking Config Backups - Time: 00:00:08 <=======================> (137 / 137) 100.00% Time: 00:00:08
+
+[i] No Config Backups Found.
+
+[+] Enumerating Users (via Passive and Aggressive Methods)
+ Brute Forcing Author IDs - Time: 00:00:00 <========================> (10 / 10) 100.00% Time: 00:00:00
+
+[i] User(s) Identified:
+
+[+] support
+ | Found By: Wp Json Api (Aggressive Detection)
+ |  - http://10.10.195.101/wordpress/index.php/index.php/wp-json/wp/v2/users/?per_page=100&page=1
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[!] No WPScan API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[+] Finished: Sat Mar 11 02:20:18 2023
+[+] Requests Done: 682
+[+] Cached Requests: 9
+[+] Data Sent: 190.495 KB
+[+] Data Received: 690.782 KB
+[+] Memory used: 251.828 MB
+[+] Elapsed time: 00:00:59

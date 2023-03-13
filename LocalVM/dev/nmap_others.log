@@ -1,0 +1,14 @@
+# Nmap 7.93 scan initiated Sun Mar 12 11:16:33 2023 as: nmap -sC -sV -oN nmap_others.log -p 38587,56625,57267,59131 -vv -Pn 10.0.2.16
+Nmap scan report for 10.0.2.16
+Host is up, received user-set.
+Scanned at 2023-03-12 11:16:48 EDT for 8s
+
+PORT      STATE    SERVICE REASON      VERSION
+38587/tcp filtered unknown no-response
+56625/tcp filtered unknown no-response
+57267/tcp filtered unknown no-response
+59131/tcp filtered unknown no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 12 11:16:56 2023 -- 1 IP address (1 host up) scanned in 22.49 seconds
