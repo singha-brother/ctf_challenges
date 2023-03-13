@@ -83,3 +83,15 @@ echo "contents_from_id_rsa.pub_from_local_machine" > .ssh/authorized_keys
 ssh username@$IP -i id_rsa
 ```
 - it will enter with ssh
+
+6. To get stable shell and if the machine is installed python3
+
+- in victim machine
+
+```sh
+export TERM=xterm
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+# press Ctrl+z -> to run as backgroud and will return to local machine shell
+stty raw -echo; fg # will return to victim machine
+reset
+```
