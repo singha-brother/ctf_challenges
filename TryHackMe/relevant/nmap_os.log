@@ -1,0 +1,39 @@
+# Nmap 7.80 scan initiated Wed Mar 15 17:38:06 2023 as: nmap -O -oN nmap_os.log -vv 10.10.184.217
+Nmap scan report for 10.10.184.217
+Host is up, received echo-reply ttl 127 (0.24s latency).
+Scanned at 2023-03-15 17:38:06 +0630 for 21s
+Not shown: 995 filtered ports
+Reason: 995 no-responses
+PORT     STATE SERVICE       REASON
+80/tcp   open  http          syn-ack ttl 127
+135/tcp  open  msrpc         syn-ack ttl 127
+139/tcp  open  netbios-ssn   syn-ack ttl 127
+445/tcp  open  microsoft-ds  syn-ack ttl 127
+3389/tcp open  ms-wbt-server syn-ack ttl 127
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows 2016|2012|2008|10 (91%)
+OS CPE: cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_server_2012 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_10:1607
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Microsoft Windows Server 2016 (91%), Microsoft Windows Server 2012 (85%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (85%), Microsoft Windows Server 2012 R2 (85%), Microsoft Windows Server 2008 R2 (85%), Microsoft Windows 10 1607 (85%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.80%E=4%D=3/15%OT=80%CT=%CU=%PV=Y%G=N%TM=6411A72C%P=x86_64-pc-linux-gnu)
+SEQ(SP=102%GCD=1%ISR=108%TI=I%II=I%SS=S%TS=A)
+OPS(O1=M505NW8ST11%O2=M505NW8ST11%O3=M505NW8NNT11%O4=M505NW8ST11%O5=M505NW8ST11%O6=M505ST11)
+WIN(W1=2000%W2=2000%W3=2000%W4=2000%W5=2000%W6=2000)
+ECN(R=Y%DF=Y%TG=80%W=2000%O=M505NW8NNS%CC=Y%Q=)
+T1(R=Y%DF=Y%TG=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+U1(R=N)
+IE(R=Y%DFI=N%TG=80%CD=Z)
+
+Uptime guess: 0.005 days (since Wed Mar 15 17:30:58 2023)
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 15 17:38:28 2023 -- 1 IP address (1 host up) scanned in 22.51 seconds

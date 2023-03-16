@@ -26,7 +26,7 @@
 | 22  | Chocolate Factory  | [here](TryHackMe/chocolate\_factory/)    | THM    | linux(vi),web,ssh,stegano,crypt           | easy       | March 7, 2023  |
 | 23  | Easy Peasy         | [here](TryHackMe/easy\_peasy/)           | THM    | linux(cron),web,stegano,crypt             | easy       | March 7, 2023  |
 | 24  | GitHappens         | [here](TryHackMe/githappens/)            | THM    | git                                       | easy       | March 7, 2023  |
-| 25  | ArchAngel          | [here](TryHackMe/archangel/)             | THM    | linux(cp),web(log poison)                 | easy       | March 7, 2023  |
+| 25  | ArchAngel          | [here](TryHackMe/archangel/)             | THM    | linux(cp),web(lfi,log poison)             | easy       | March 7, 2023  |
 | 26  | Fowsniff CTF       | [here](TryHackMe/Fowsniff/)              | THM    | linux(00-header),pop3,ssh                 | easy       | March 8, 2023  |
 | 27  | Agent T            | [here](TryHackMe/agentT/)                | THM    | web(User-Agentt, php 8.1.0-dev)           | easy       | March 8, 2023  |
 | 28  | Mustacchio         | [here](TryHackMe/mustacchio/)            | THM    | linux(suid),web(xxe),ssh                  | easy       | March 8, 2023  |
@@ -44,6 +44,11 @@
 | 40  | All In One         | [here](TryHackMe/all_in_one/)            | THM    | linux(cron), web(wp,lfi,info dis)         | easy       | March 13, 2023 |
 | 41  | Madness            | [here](TryHackMe/madness/)               | THM    | linux(suid), web, stegano                 | easy       | March 13, 2023 |
 | 42  | Jack Of All Trades | [here](TryHackMe/jack_of_all_trades/)    | THM    | linux, web, stegano                       | easy       | March 14, 2023 |
+| 43  | Mr Robot           | [here](TryHackMe/mr_robot/)              | THM    | linux(nmap), web(bruteforce)              | medium     | March 15, 2023 |
+| 44  | Wonderland         | [here](TryHackMe/wonderland/)            | THM    | linux(suid,cap), web(info dis)            | medium     | March 15, 2023 |
+| 45  | DogCat             | [here](TryHackMe/dogcat/)                | THM    | linux(docker esc), web(lfi)               | medium     | March 16, 2023 |
+| 46  | Kenobi             | [here](TryHackMe/kenobi/)                | THM    | linux, smb, ftp                           | easy       | March 17, 2023 |
+| 47  | Alfred             | [here](TryHackMe/alfred/)                | THM    | window, web(rce)                          | easy       | March 17, 2023 |
 
 - [Here is Git Book Link](https://singha-notes.gitbook.io/ctf-challenges/)
 - [Here is GitHub Link](https://github.com/whoami-singha/ctf_challenges)

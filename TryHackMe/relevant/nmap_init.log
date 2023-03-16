@@ -1,0 +1,81 @@
+# Nmap 7.80 scan initiated Wed Mar 15 17:33:01 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.184.217
+Nmap scan report for 10.10.184.217
+Host is up, received syn-ack (0.28s latency).
+Scanned at 2023-03-15 17:33:02 +0630 for 162s
+Not shown: 995 filtered ports
+Reason: 995 no-responses
+PORT     STATE SERVICE            REASON  VERSION
+80/tcp   open  http               syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+135/tcp  open  msrpc              syn-ack Microsoft Windows RPC
+139/tcp  open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds       syn-ack Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp open  ssl/ms-wbt-server? syn-ack
+| rdp-ntlm-info: 
+|   Target_Name: RELEVANT
+|   NetBIOS_Domain_Name: RELEVANT
+|   NetBIOS_Computer_Name: RELEVANT
+|   DNS_Domain_Name: Relevant
+|   DNS_Computer_Name: Relevant
+|   Product_Version: 10.0.14393
+|_  System_Time: 2023-03-15T11:05:04+00:00
+| ssl-cert: Subject: commonName=Relevant
+| Issuer: commonName=Relevant
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-03-14T11:02:18
+| Not valid after:  2023-09-13T11:02:18
+| MD5:   f4d0 6d8f f5fc 25a3 8077 59c4 6f21 07b5
+| SHA-1: f7d1 116e a733 217d bbef 25f1 b77c 4b7e 895f fb7d
+| -----BEGIN CERTIFICATE-----
+| MIIC1DCCAbygAwIBAgIQYDdrAxI2patOy3dfji2paDANBgkqhkiG9w0BAQsFADAT
+| MREwDwYDVQQDEwhSZWxldmFudDAeFw0yMzAzMTQxMTAyMThaFw0yMzA5MTMxMTAy
+| MThaMBMxETAPBgNVBAMTCFJlbGV2YW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+| MIIBCgKCAQEAvoIIwVeffKrIyH6PGQiEF6mZaf7i5TRU+CY3kNbJyEN1o43bApkd
+| hcJSzUAIAtoHRGHrYdiTz5UOKYwoJfg0gjwffyqSYeKBy4kGPiQWAABtccvb3UqN
+| qo/dm2U/vm2K59eaAEF1GNJHb/A6id2YwawITS2aF3O61pBlvuRxb3jLSyoWfQ+L
+| RPZhZm+hBoH/InbifP7a7JSc2JHIzxMnRnOBGnAV1Zy540g5pSsPuqUkH591VQCe
+| SKbqf48hj9a9KKpUwX9YDJv9J0AFBkLeki9bOMaQqXaUnx2YPNdfPLAdlKrIfUgE
+| e1AOaX4/ZNJYP55QkxnfPhshiUXmZFp/VQIDAQABoyQwIjATBgNVHSUEDDAKBggr
+| BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBACpdww9k+q9M
+| DdUuhnyCF0nUHNzo/zckUVDI9UtM+ZxisTaGJIdNRjDc0tHqNfB/X0OoSXhFtr5d
+| 1pIjJUqmOFefTuFv+5cMYGQvy9xFyz2buJt1kWvDDTY8OrbfM7GXo+ymn9t2bVYL
+| obwwvphOcOj9BRiq4L8cdtNMYJqfxjc1Fsva3W/m62958Xr9soWTjxKp3qInhO3O
+| ssa0EsA8vS443SEdJptPktfxMw6Ak8pfG+UCoOlLYz8oO4VTd72My0mxzuK+gMKM
+| mi+iQC4OJJgBrwbVa9UXjFaqPnNZ72k+IcXIW2CIA6hIwnN3PQ9zx02/Ghe4DDmO
+| AZWCLB3Rpaw=
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-03-15T11:05:44+00:00; 0s from scanner time.
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 51524/tcp): CLEAN (Timeout)
+|   Check 2 (port 26586/tcp): CLEAN (Timeout)
+|   Check 3 (port 62309/udp): CLEAN (Timeout)
+|   Check 4 (port 19183/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb-os-discovery: ERROR: Script execution failed (use -d to debug)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-03-15T11:05:08
+|_  start_date: 2023-03-15T11:02:43
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Mar 15 17:35:45 2023 -- 1 IP address (1 host up) scanned in 163.79 seconds

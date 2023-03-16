@@ -43,6 +43,8 @@
 * [All In One](TryHackMe/all_in_one/README.md)
 * [Madness](TryhackMe/madness/README.md)
 * [Jack Of All Trades](TryHackMe/jack_of_all_trades/README.md)
+* [Kenobi](TryHackMe/kenobi/README.md)
+* [Alfred](TryHackMe/alfred/README.md)
 
 ## Medium
 
@@ -50,3 +52,6 @@
 * [Ultra Tech](TryHackMe/ultra\_tech/README.md)
 * [Anonymous](TryHackMe/anonymous/README.md)
 * [Convert My Video](TryHackMe/convert\_my\_video/README.md)
+* [Mr Robot](TryHackMe/mr_robot/README.md)
+* [Wonderland](TryHackMe/wonderland/README.md)
+* [DogCat](TryHackMe/dogcat/README.md)

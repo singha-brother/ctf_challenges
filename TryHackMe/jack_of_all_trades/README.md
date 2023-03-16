@@ -135,7 +135,7 @@ $ hydra -l jack -P pwd ssh://$IP -s 80
 - jack has no sudo access
 - find suid and found `usr/bin/strings`
 - suid `strings` can read any file
-- form ctf perspective, I only try to get root flag which may exists in `/root/root.txt` folder
+- from ctf perspective, I only try to get root flag which may exists in `/root/root.txt` folder
 - user flag may be user.jpg under jack home directory and copy to local machine
 
 ```sh
