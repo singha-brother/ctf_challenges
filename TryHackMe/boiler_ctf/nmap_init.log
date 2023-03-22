@@ -1,0 +1,40 @@
+# Nmap 7.80 scan initiated Tue Mar 21 17:39:13 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.253.57
+Increasing send delay for 10.10.253.57 from 0 to 5 due to 63 out of 208 dropped probes since last increase.
+Nmap scan report for 10.10.253.57
+Host is up, received syn-ack (0.30s latency).
+Scanned at 2023-03-21 17:39:14 +0630 for 194s
+Not shown: 997 closed ports
+Reason: 997 conn-refused
+PORT      STATE SERVICE REASON  VERSION
+21/tcp    open  ftp     syn-ack vsftpd 3.0.3
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.11.8.57
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 2
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+80/tcp    open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+10000/tcp open  http    syn-ack MiniServ 1.930 (Webmin httpd)
+|_http-favicon: Unknown favicon MD5: 81F7E5044D6CBD58310ED0D4CABA4D4B
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+Service Info: OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 21 17:42:28 2023 -- 1 IP address (1 host up) scanned in 194.90 seconds

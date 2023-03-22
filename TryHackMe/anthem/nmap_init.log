@@ -1,0 +1,67 @@
+# Nmap 7.80 scan initiated Sat Mar 18 21:02:25 2023 as: nmap -sC -sV -oN nmap_init.log -Pn -vv 10.10.250.2
+Increasing send delay for 10.10.250.2 from 0 to 5 due to 103 out of 341 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 10 to 20 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 20 to 40 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 40 to 80 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 80 to 160 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 160 to 320 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 320 to 640 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.250.2 from 640 to 1000 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.250.2
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-03-18 21:02:25 +0630 for 2676s
+Not shown: 727 filtered ports, 271 closed ports
+Reason: 727 no-responses and 271 conn-refused
+PORT     STATE SERVICE       REASON  VERSION
+80/tcp   open  http          syn-ack Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 4 disallowed entries 
+|_/bin/ /config/ /umbraco/ /umbraco_client/
+|_http-title: Anthem.com - Welcome to our blog
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: WIN-LU09299160F
+|   NetBIOS_Domain_Name: WIN-LU09299160F
+|   NetBIOS_Computer_Name: WIN-LU09299160F
+|   DNS_Domain_Name: WIN-LU09299160F
+|   DNS_Computer_Name: WIN-LU09299160F
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-03-18T15:16:43+00:00
+| ssl-cert: Subject: commonName=WIN-LU09299160F
+| Issuer: commonName=WIN-LU09299160F
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-03-17T14:32:54
+| Not valid after:  2023-09-16T14:32:54
+| MD5:   7ece d33a ba80 1c50 1bca a359 1f10 74c8
+| SHA-1: f2b3 cda9 923b ce42 d392 9b16 b21d 2f89 d5a4 62ba
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQRuhNmnQ324RDUfl61pFwqzANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9XSU4tTFUwOTI5OTE2MEYwHhcNMjMwMzE3MTQzMjU0WhcNMjMw
+| OTE2MTQzMjU0WjAaMRgwFgYDVQQDEw9XSU4tTFUwOTI5OTE2MEYwggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDYk2TEDRryLBsK4QOvGsdpHG5TwQUcIeKL
+| 82MYCcy2ndtEov2GeK3WhsBv1i5adFu7O4zrFjCRTUko9dk4RpG5/64LtGuQbI5O
+| NZUyaZt5zLaxaWNiRerwB2Gq97O8vi8XcyKeoZyPieNVD8+bALRvU8aDQRjBQdJQ
+| wzySoKIwBvomz82fmhiaCxmemJ6SQuP6FpFel7UScFudWVytU5wGRcj62ay/XWal
+| ydp2pV95WUmYlHLvjg2MMA+ig648pS7KKLFN6nwP6MZfz02mfs9IvJnTFP8CD8Mg
+| EvsLApXmZYC/3EJ0VeARWO1Ubg4O+k0KU7XyIfYb/QAkN+KUbVSBAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEAaqwF2UAS8PyOu/zpx+K2b++RnX4Rd+4dsAC6MREdjG9SZ2U7UF/hk2ig
+| LLKEjlo7hWm5fDVha63z7UspLuzN5u2qNP0kZuSb7mbl2v6QMLNezdRBxQELV+d3
+| dsCnXFUQo4LRvr+e4lXu4a7VEdoCQLX5ZrswovE+AIhVno0WKiDvkJ+KzeFr5FYU
+| Fv0O0yGAvW+Zm8SZmxEjDiGgTyQ38yqVN2TqFKbQGYRGjApFJnPiZsOE98zVURhB
+| pTTcZ5hdAKxael62CvFxqXt1RMdebSGb0g9Taw9b/PXICMPsjbbW3Vm+w7dBReYT
+| m1OhrerMDCYsuk1GUIZlGAojVGN7dQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-03-18T15:17:00+00:00; 0s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar 18 21:47:01 2023 -- 1 IP address (1 host up) scanned in 2676.89 seconds

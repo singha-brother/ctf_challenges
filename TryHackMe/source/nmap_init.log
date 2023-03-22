@@ -1,0 +1,49 @@
+# Nmap 7.80 scan initiated Sun Mar 19 13:30:51 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.216.40
+Nmap scan report for 10.10.216.40
+Host is up, received conn-refused (0.22s latency).
+Scanned at 2023-03-19 13:30:53 +0630 for 80s
+Not shown: 974 closed ports
+Reason: 974 conn-refused
+PORT      STATE    SERVICE        REASON      VERSION
+3/tcp     filtered compressnet    no-response
+22/tcp    open     ssh            syn-ack     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b7:4c:d0:bd:e2:7b:1b:15:72:27:64:56:29:15:ea:23 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDbZAxRhWUij6g6MP11OkGSk7vYHRNyQcTIdMmjj1kSvDhyuXS9QbM5t2qe3UMblyLaObwKJDN++KWfzl1+beOrq3sXkTA4Wot1RyYo0hPdQT0GWBTs63dll2+c4yv3nDiYAwtSsPLCeynPEmSUGDjkVnP12gxXe/qCsM2+rZ9tzXtSWiXgWvaxMZiHaQpT1KaY0z6ebzBTI8siU0t+6SMK7rNv1CsUNpGeicfbC5ZOE4/Nbc8cxNl7gDtZbyjdh9S7KTvzkSj2zBJ+8VbzsuZk1yy8uyLDgmuBQ6LzbYUNHkTQhJetVq7utFpRqLdpSJTcsz5PAxd1Upe9DqoYURuL
+|   256 b7:85:23:11:4f:44:fa:22:00:8e:40:77:5e:cf:28:7c (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEYCha8jk+VzcJRRwV41rl8EuJBiy7Cf8xg6tX41bZv0huZdCcCTCq9dLJlzO2V9s+sMp92TpzR5j8NAAuJt0DA=
+|   256 a9:fe:4b:82:bf:89:34:59:36:5b:ec:da:c2:d3:95:ce (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOJnY5oycmgw6ND6Mw4y0YQWZiHoKhePo4bylKKCP0E5
+99/tcp    filtered metagram       no-response
+100/tcp   filtered newacct        no-response
+340/tcp   filtered unknown        no-response
+722/tcp   filtered unknown        no-response
+726/tcp   filtered unknown        no-response
+783/tcp   filtered spamassassin   no-response
+873/tcp   filtered rsync          no-response
+1201/tcp  filtered nucleus-sand   no-response
+1272/tcp  filtered cspmlockmgr    no-response
+1533/tcp  filtered virtual-places no-response
+2004/tcp  filtered mailbox        no-response
+2009/tcp  filtered news           no-response
+2099/tcp  filtered h2250-annex-g  no-response
+3827/tcp  filtered netmpi         no-response
+3971/tcp  filtered lanrevserver   no-response
+4005/tcp  filtered pxc-pin        no-response
+5009/tcp  filtered airport-admin  no-response
+7778/tcp  filtered interwise      no-response
+9090/tcp  filtered zeus-admin     no-response
+10000/tcp open     http           syn-ack     MiniServ 1.890 (Webmin httpd)
+|_http-favicon: Unknown favicon MD5: 9F1C92D9447F38042821CC07F9C96696
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+26214/tcp filtered unknown        no-response
+27353/tcp filtered unknown        no-response
+32771/tcp filtered sometimes-rpc5 no-response
+56738/tcp filtered unknown        no-response
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 19 13:32:13 2023 -- 1 IP address (1 host up) scanned in 81.95 seconds

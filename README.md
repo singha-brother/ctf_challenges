@@ -27,7 +27,7 @@
 | 23  | Easy Peasy         | [here](TryHackMe/easy\_peasy/)           | THM    | linux(cron),web,stegano,crypt             | easy       | March 7, 2023  |
 | 24  | GitHappens         | [here](TryHackMe/githappens/)            | THM    | git                                       | easy       | March 7, 2023  |
 | 25  | ArchAngel          | [here](TryHackMe/archangel/)             | THM    | linux(cp),web(lfi,log poison)             | easy       | March 7, 2023  |
-| 26  | Fowsniff CTF       | [here](TryHackMe/Fowsniff/)              | THM    | linux(00-header),pop3,ssh                 | easy       | March 8, 2023  |
+| 26  | Fowsniff CTF       | [here](TryHackMe/fowsniff/)              | THM    | linux(00-header),pop3,ssh                 | easy       | March 8, 2023  |
 | 27  | Agent T            | [here](TryHackMe/agentT/)                | THM    | web(User-Agentt, php 8.1.0-dev)           | easy       | March 8, 2023  |
 | 28  | Mustacchio         | [here](TryHackMe/mustacchio/)            | THM    | linux(suid),web(xxe),ssh                  | easy       | March 8, 2023  |
 | 29  | Corridor           | [here](TryHackMe/corridor/)              | THM    | web(idor), crypt                          | easy       | March 8, 2023  |
@@ -49,6 +49,19 @@
 | 45  | DogCat             | [here](TryHackMe/dogcat/)                | THM    | linux(docker esc), web(lfi)               | medium     | March 16, 2023 |
 | 46  | Kenobi             | [here](TryHackMe/kenobi/)                | THM    | linux, smb, ftp                           | easy       | March 17, 2023 |
 | 47  | Alfred             | [here](TryHackMe/alfred/)                | THM    | window, web(rce)                          | easy       | March 17, 2023 |
+| 48  | Anthem             | [here](TryHackMe/anthem/)                | THM    | window, web                               | easy       | March 18, 2023 |
+| 49  | HackPark           | [here](TryHackMe/hackpark/)              | THM    | window, web                               | medium     | March 19, 2023 |
+| 50  | Blueprint          | [here](TryHackMe/blueprint/)             | THM    | window, web(RCE)                          | easy       | March 19, 2023 |
+| 51  | Toolrus            | [here](TryHackMe/toolsrus/)              | THM    | linux, web(rce, mgr-upload)               | easy       | March 19, 2023 |
+| 52  | Source             | [here](TryHackMe/source/)                | THM    | linux, web(rce)                           | easy       | March 19, 2023 |
+| 53  | Colddbox           | [here](TryHackMe/ColddBox/)              | THM    | linux(suid), web(bruteforce)              | easy       | March 19, 2023 |
+| 54  | Boiler CTF         | [here](TryHackMe/boiler_ctf/)            | THM    | linux(suid), web(rce)                     | medium     | March 21, 2023 |
+| 55  | Biohazard          | [here](TryHackMe/biohazard/)             | THM    | linux, web, crypt, stegano                | medium     | March 22, 2023 |
+| 56  | 0day               | [here](TryHackMe/0day/)                  | THM    | linux(kernel), web(shellshock/cgi)        | medium     | March 22, 2023 |
+| 57  | Overpass 2         | [here](TryHackMe/overpass2/)             | THM    | linux, wireshark, crypt                   | easy       | March 22, 2023 |
+| 58  | Overpass 3         | [here](TryHackMe/overpass3/)             | THM    | linux(root_squashing), web, ftp           | medium     | March 22, 2023 |
+| 59  | Game Zone          | [here](TryHackMe/game_zone/)             | THM    | linux(rce,port forward), web(sqli)        | easy       | March 22, 2023 |
+
 
 - [Here is Git Book Link](https://singha-notes.gitbook.io/ctf-challenges/)
 - [Here is GitHub Link](https://github.com/whoami-singha/ctf_challenges)

@@ -29,7 +29,7 @@
 * [Easy Peasy](TryHackMe/easy\_peasy/README.md)
 * [GitHappens](TryHackMe/githappens/README.md)
 * [ArchAngel](TryHackMe/archangel/README.md)
-* [Fowsniff CTF](easy/fowsniff-ctf.md)
+* [Fowsniff CTF](TryHackMe/fowsniff/README.md)
 * [Agent T](TryHackMe/agentT/README.md)
 * [Mustacchio](TryHackMe/mustacchio/README.md)
 * [Corridor](TryHackMe/corridor/README.md)
@@ -45,6 +45,13 @@
 * [Jack Of All Trades](TryHackMe/jack\_of\_all\_trades/README.md)
 * [Kenobi](TryHackMe/kenobi/README.md)
 * [Alfred](TryHackMe/alfred/README.md)
+* [Anthem](TryHackMe/anthem/README.md)
+* [Blueprint](TryHackMe/blueprint/README.md)
+* [Toolrus](TryHackMe/toolsrus/README.md)
+* [Source](TryHackMe/source/README.md)
+* [Colddbox](TryHackMe/ColddBox/README.md)
+* [Game Zone](TryHackMe/game_zone/README.md)
+* [Overpass 2](TryHackMe/overpass2/README.md)
 
 ## Medium
 
@@ -55,3 +62,8 @@
 * [Mr Robot](TryHackMe/mr\_robot/README.md)
 * [Wonderland](TryHackMe/wonderland/README.md)
 * [DogCat](TryHackMe/dogcat/README.md)
+* [HackPark](TryHackMe/hackpark/README.md)
+* [BoilerCTF](TryHackMe/boiler_ctf/README.md)
+* [Biohazard](TryHackMe/biohazard/README.md)
+* [0day](TryHackMe/0day/README.md)
+* [Overpass3](TryHackMe/overpass3/README.md)

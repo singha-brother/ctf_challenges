@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Sun Mar 19 02:09:35 2023 as: nmap -sV -oN nmap_init.log -vv 10.10.27.74
+Increasing send delay for 10.10.27.74 from 0 to 5 due to 43 out of 141 dropped probes since last increase.
+Increasing send delay for 10.10.27.74 from 5 to 10 due to 176 out of 585 dropped probes since last increase.
+Increasing send delay for 10.10.27.74 from 10 to 20 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.27.74 from 20 to 40 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.27.74 from 40 to 80 due to 11 out of 11 dropped probes since last increase.
+Increasing send delay for 10.10.27.74 from 80 to 160 due to 11 out of 11 dropped probes since last increase.
+Nmap scan report for 10.10.27.74
+Host is up, received syn-ack (0.24s latency).
+Scanned at 2023-03-19 02:09:35 +0630 for 653s
+Not shown: 558 closed ports, 432 filtered ports
+Reason: 558 conn-refused and 432 no-responses
+PORT      STATE SERVICE      REASON  VERSION
+80/tcp    open  http         syn-ack Microsoft IIS httpd 7.5
+135/tcp   open  msrpc        syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http     syn-ack Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
+445/tcp   open  microsoft-ds syn-ack Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+3306/tcp  open  mysql        syn-ack MariaDB (unauthorized)
+8080/tcp  open  http         syn-ack Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
+49152/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49154/tcp open  msrpc        syn-ack Microsoft Windows RPC
+49159/tcp open  msrpc        syn-ack Microsoft Windows RPC
+Service Info: Hosts: www.example.com, BLUEPRINT, localhost; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 19 02:20:28 2023 -- 1 IP address (1 host up) scanned in 653.16 seconds
