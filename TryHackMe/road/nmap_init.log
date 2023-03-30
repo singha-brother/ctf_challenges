@@ -1,0 +1,20 @@
+# Nmap 7.80 scan initiated Sun Mar 26 00:34:26 2023 as: nmap -sC -sV -oN nmap_init.log -vv 10.10.30.111
+Increasing send delay for 10.10.30.111 from 0 to 5 due to 42 out of 138 dropped probes since last increase.
+Nmap scan report for 10.10.30.111
+Host is up, received syn-ack (0.30s latency).
+Scanned at 2023-03-26 00:34:27 +0630 for 44s
+Not shown: 998 closed ports
+Reason: 998 conn-refused
+PORT   STATE SERVICE REASON  VERSION
+22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.2 (Ubuntu Linux; protocol 2.0)
+80/tcp open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: FB0AA7D49532DA9D0006BA5595806138
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Sky Couriers
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 26 00:35:11 2023 -- 1 IP address (1 host up) scanned in 44.67 seconds

