@@ -1,0 +1,7 @@
+[wordpress-readme-file] [http] [info] http://internal.thm/wordpress/readme.html
+[wordpress-login] [http] [info] http://internal.thm/wordpress/wp-login.php
+[wordpress-xmlrpc-file] [http] [info] http://internal.thm/wordpress/xmlrpc.php
+[CVE-2017-5487:usernames] [http] [medium] http://internal.thm/wordpress/?rest_route=/wp/v2/users/ [admin]
+[wordpress-detect:version_by_css] [http] [info] http://internal.thm/wordpress/wp-admin/install.php [5.4.2]
+[wp-license-file] [http] [info] http://internal.thm/wordpress/license.txt
+[wordpress-xmlrpc-listmethods] [http] [info] http://internal.thm/wordpress/xmlrpc.php

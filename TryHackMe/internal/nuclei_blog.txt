@@ -1,0 +1,7 @@
+[wordpress-xmlrpc-listmethods] [http] [info] http://internal.thm/blog/xmlrpc.php
+[wordpress-readme-file] [http] [info] http://internal.thm/blog/readme.html
+[wp-license-file] [http] [info] http://internal.thm/blog/license.txt
+[CVE-2017-5487:usernames] [http] [medium] http://internal.thm/blog/?rest_route=/wp/v2/users/ [admin]
+[wordpress-login] [http] [info] http://internal.thm/blog/wp-login.php
+[wordpress-xmlrpc-file] [http] [info] http://internal.thm/blog/xmlrpc.php
+[wordpress-detect:version_by_js] [http] [info] http://internal.thm/blog/ [5.4.2]

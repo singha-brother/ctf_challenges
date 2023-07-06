@@ -1,0 +1,354 @@
+{
+    "commandline": "ffuf -u http://internal.thm/FUZZ -w /usr/share/wordlists/common.txt -e .php,.txt,.log,.bak -c -t 128 -o ffuf_internal_directory.txt",
+    "time": "2023-04-10T13:27:11+06:30",
+    "results": [
+        {
+            "input": {
+                "FUZZ": ".hta.bak"
+            },
+            "position": 115,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.hta.bak",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htaccess.txt"
+            },
+            "position": 118,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htaccess.txt",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htpasswd.bak"
+            },
+            "position": 125,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htpasswd.bak",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htaccess.php"
+            },
+            "position": 117,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htaccess.php",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htaccess"
+            },
+            "position": 116,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htaccess",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htaccess.log"
+            },
+            "position": 119,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htaccess.log",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".hta"
+            },
+            "position": 111,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.hta",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htpasswd.log"
+            },
+            "position": 124,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htpasswd.log",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".hta.php"
+            },
+            "position": 112,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.hta.php",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htpasswd"
+            },
+            "position": 121,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htpasswd",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htpasswd.txt"
+            },
+            "position": 123,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htpasswd.txt",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htaccess.bak"
+            },
+            "position": 120,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htaccess.bak",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".hta.txt"
+            },
+            "position": 113,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.hta.txt",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".htpasswd.php"
+            },
+            "position": 122,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.htpasswd.php",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": ".hta.log"
+            },
+            "position": 114,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/.hta.log",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": "blog"
+            },
+            "position": 4356,
+            "status": 301,
+            "length": 311,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "http://internal.thm/blog/",
+            "resultfile": "",
+            "url": "http://internal.thm/blog",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": "index.html"
+            },
+            "position": 10956,
+            "status": 200,
+            "length": 10918,
+            "words": 3499,
+            "lines": 376,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/index.html",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": "javascript"
+            },
+            "position": 11581,
+            "status": 301,
+            "length": 317,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "http://internal.thm/javascript/",
+            "resultfile": "",
+            "url": "http://internal.thm/javascript",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": "phpmyadmin"
+            },
+            "position": 15521,
+            "status": 301,
+            "length": 317,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "http://internal.thm/phpmyadmin/",
+            "resultfile": "",
+            "url": "http://internal.thm/phpmyadmin",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": "server-status"
+            },
+            "position": 18546,
+            "status": 403,
+            "length": 277,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "",
+            "resultfile": "",
+            "url": "http://internal.thm/server-status",
+            "host": "internal.thm"
+        },
+        {
+            "input": {
+                "FUZZ": "wordpress"
+            },
+            "position": 22766,
+            "status": 301,
+            "length": 316,
+            "words": 20,
+            "lines": 10,
+            "redirectlocation": "http://internal.thm/wordpress/",
+            "resultfile": "",
+            "url": "http://internal.thm/wordpress",
+            "host": "internal.thm"
+        }
+    ],
+    "config": {
+        "headers": {},
+        "extensions": [
+            ".php",
+            ".txt",
+            ".log",
+            ".bak"
+        ],
+        "dirsearch_compatibility": false,
+        "method": "GET",
+        "url": "http://internal.thm/FUZZ",
+        "postdata": "",
+        "quiet": false,
+        "colors": true,
+        "inputproviders": [
+            {
+                "name": "wordlist",
+                "keyword": "FUZZ",
+                "value": "/usr/share/wordlists/common.txt"
+            }
+        ],
+        "cmd_inputnum": 100,
+        "inputmode": "clusterbomb",
+        "outputdirectory": "",
+        "outputfile": "ffuf_internal_directory.txt",
+        "outputformat": "json",
+        "ignorebody": false,
+        "ignore_wordlist_comments": false,
+        "stop_403": false,
+        "stop_errors": false,
+        "stop_all": false,
+        "follow_redirects": false,
+        "autocalibration": false,
+        "autocalibration_strings": [],
+        "timeout": 10,
+        "delay": {
+            "value": "0.00"
+        },
+        "filters": {},
+        "matchers": {
+            "status": {
+                "value": "200,204,301,302,307,401,403"
+            }
+        },
+        "threads": 128,
+        "proxyurl": "",
+        "replayproxyurl": "",
+        "cmdline": "ffuf -u http://internal.thm/FUZZ -w /usr/share/wordlists/common.txt -e .php,.txt,.log,.bak -c -t 128 -o ffuf_internal_directory.txt",
+        "verbose": false,
+        "maxtime": 0,
+        "maxtime_job": 0,
+        "recursion": false,
+        "recursion_depth": 0
+    }
+}
